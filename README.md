@@ -25,6 +25,6 @@ If you use this code, please cite our paper:
 ## Acknowledgement:
 This code is based on the codebases:
 
-[Prototypical Network](https://github.com/jakesnell/prototypical-networks)
-[MetaOpt](https://github.com/kjunelee/MetaOptNet)
+[Prototypical Network](https://github.com/jakesnell/prototypical-networks),
+[MetaOpt](https://github.com/kjunelee/MetaOptNet),
 [DSN](https://github.com/chrysts/dsn_fewshot)
