@@ -1,7 +1,6 @@
 # Kernel Relative-prototype Spectral Filtering for Few-shot Learning
 
-This repository contains the code for the paper: [Kernel Relative-prototype Spectral Filtering for Few-shot Learning]
-ECCV 2022
+This repository contains the code for the paper: Kernel Relative-prototype Spectral Filtering for Few-shot Learning
 
 ## Citation:
 If you use this code, please cite our paper:
@@ -14,6 +13,12 @@ If you use this code, please cite our paper:
   year={2022}
  }
  ```
+ 
+## Dependencies:
+Python 3.9.7
+PyTorch 1.11.0
+qpth 0.0.15
+tqdm
  
  ## Dataset:
 [**miniImageNet**](https://drive.google.com/file/d/1fJAK5WZTjerW7EWHHQAR9pRJVNg1T1Y7), [**tieredImageNet**](https://drive.google.com/file/d/1nVGCTd9ttULRXFezh4xILQ9lUkg0WZCG), [**CIFAR-FS**](https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz)
