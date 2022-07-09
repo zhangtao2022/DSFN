@@ -57,7 +57,7 @@ python test.py --gpu 0 --load ./experiments/miniImageNet_shrinkage/best_model.pt
 --way 5 --shot 5 --query 15 --head shrinkage --network ResNet --dataset miniImageNet
 ```
 
-1. Train shrinkage classifier with ResNet-12 on 5-way miniImageNet 1-shot benchmark:
+2. Train shrinkage classifier with ResNet-12 on 5-way miniImageNet 1-shot benchmark:
 ```
 python test.py --gpu 0 --load ./experiments/miniImageNet_shrinkage/best_model.pth --episode 1000 \
 --way 5 --shot 1 --query 15 --head shrinkage --network ResNet --dataset miniImageNet
