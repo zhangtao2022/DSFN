@@ -24,24 +24,30 @@ If you use this code, please cite our paper:
 [**miniImageNet**](https://drive.google.com/file/d/1fJAK5WZTjerW7EWHHQAR9pRJVNg1T1Y7), [**tieredImageNet**](https://drive.google.com/file/d/1nVGCTd9ttULRXFezh4xILQ9lUkg0WZCG), [**CIFAR-FS**](https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz)
 
 ## Training:
-1. Train shrinkage classifier using ResNet-12 on mini-ImageNet benchmark:
+1. Train shrinkage classifier using ResNet-12 on 5-way mini-ImageNet 5-shot/1-shot benchmark:
     ```bash
-    python train.py --gpu 0,1,2,3 --save-path "./experiments/miniImageNet_shrinkage" --train-shot 15 \
+    python train.py --gpu 0,1,2,3 --save-path "./experiments/miniImageNet_shrinkage" --train-shot 15 --train-query 10\
     --head shrinkage --network ResNet --dataset miniImageNet --eps 0.1
     ```
-2. Train shrinkage classifier using Conv-4 on mini-ImageNet benchmark:
+2. Train shrinkage classifier using Conv-4 on 5-way mini-ImageNet 5-shot/1-shot benchmark:
     ```bash
-    python train.py --gpu 0 --save-path "./experiments/miniImageNet_shrinkage" --train-shot 15 \
+    python train.py --gpu 0 --save-path "./experiments/miniImageNet_shrinkage" --train-shot 15 --train-query 10\
     --head shrinkage --network ProtoNet --dataset miniImageNet
     ```
-3. Train shrinkage classifier using ResNet-12 on tieredImageNet benchmark:
+3. Train shrinkage classifier using ResNet-12 on 5-way tieredImageNet  5-shot/1-shot benchmark:
     ```bash
-    python train.py --gpu 0,1,2,3 --save-path "./experiments/tieredImageNet_shrinkage" --train-shot 10 \
+    python train.py --gpu 0,1,2,3 --save-path "./experiments/tieredImageNet_shrinkage" --train-shot 10 --train-query 15\
     --head shrinkage --network ResNet --dataset tieredImageNet
     ```
-4. Train shrinkage classifier using ResNet-12 on CIFAR-FS benchmark:
+4. Train shrinkage classifier using ResNet-12 on 5-way CIFAR-FS 1-shot benchmark:
     ```bash
-    python train.py --gpu 0 --save-path "./experiments/CIFAR_FS_shrinkage" --train-shot 5 \
+    python train.py --gpu 0 --save-path "./experiments/CIFAR_FS_shrinkage" --train-shot 2 --train-query 20\
+    --head shrinkage --network ResNet --dataset CIFAR_FS
+    ```
+
+5. Train shrinkage classifier using ResNet-12 on 5-way CIFAR-FS 5-shot benchmark:
+    ```bash
+    python train.py --gpu 0 --save-path "./experiments/CIFAR_FS_shrinkage" --train-shot 15 --train-query 10\
     --head shrinkage --network ResNet --dataset CIFAR_FS
     ```
 ## Testing:
