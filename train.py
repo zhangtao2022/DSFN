@@ -125,7 +125,7 @@ if __name__ == '__main__':
                             help='choose which embedding network to use. ResNet')
     parser.add_argument('--head', type=str, default='Shrinkage',
                             help='choose which classification head to use. Subspace, Shrinkage, ProtoNet, R2D2, SVM')
-    parser.add_argument('--dataset', type=str, default='CIFAR_FS',
+    parser.add_argument('--dataset', type=str, default='miniImageNet',
                             help='choose which classification head to use. miniImageNet, tieredImageNet, CIFAR_FS')
     parser.add_argument('--episodes-per-batch', type=int, default=8,
                             help='number of episodes per batch')
