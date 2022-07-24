@@ -3,7 +3,7 @@
 This repository contains the code for the paper: Kernel Relative-prototype Spectral Filtering for Few-shot Learning
 
 ## Citation:
-If you use this code, please cite our paper:
+%If you use this code, please cite our paper:
 
 ```
 @inproceedings{Zhang2022dsfn,
