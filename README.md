@@ -1,6 +1,6 @@
 # Kernel Relative-prototype Spectral Filtering for Few-shot Learning
 
-This repository contains the code for the paper: Kernel Relative-prototype Spectral Filtering for Few-shot Learning
+This repository contains the code for the paper: [Kernel Relative-prototype Spectral Filtering for Few-shot Learning](https://arxiv.org/pdf/2207.11685.pdf)
  
 ## Dependencies:
 * Python 3.9.7
