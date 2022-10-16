@@ -1,6 +1,15 @@
 # Kernel Relative-prototype Spectral Filtering for Few-shot Learning
 
 This repository contains the code for the paper: [Kernel Relative-prototype Spectral Filtering for Few-shot Learning](https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136800527.pdf)
+
+## Citation:
+@inproceedings{zhang2022kernel,
+  title={Kernel Relative-prototype Spectral Filtering for Few-shot Learning},
+  author={Zhang, Tao and Huang, Wu},
+  booktitle={European Conference on Computer Vision},
+  year={2022}
+  organization={Springer}
+}
  
 ## Dependencies:
 * Python 3.9.7
